@@ -16,9 +16,11 @@ public class Todo {
 			if (num == 1) { // 입금.
 				System.out.print("입금액을 입력> ");
 				balance += Integer.parseInt(scn.nextLine());
+				System.out.println("입금완료.");
 
 			} else if (num == 2) { // 출금.
 				balance -= Integer.parseInt(scn.nextLine());
+				System.out.println("출금완료.");
 
 			} else if (num == 3) { // 잔액조회.
 				System.out.printf("현재 잔액은 %d입니다.\n", balance);
