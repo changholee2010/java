@@ -15,17 +15,22 @@ public class Todo {
 			int num = Integer.parseInt(scn.nextLine()); // 문자타입반환. -> int변환
 			if (num == 1) { // 입금.
 				System.out.print("입금액을 입력> ");
-				balance = Integer.parseInt(scn.nextLine());
+				balance += Integer.parseInt(scn.nextLine());
+
 			} else if (num == 2) { // 출금.
+				balance -= Integer.parseInt(scn.nextLine());
 
 			} else if (num == 3) { // 잔액조회.
 				System.out.printf("현재 잔액은 %d입니다.\n", balance);
 
 			} else if (num == 4) { // 종료.
+				System.out.println("프로그램을 종료합니다.");
+				break;
 
-			}
-		}
+			} // end of if.
+		} // end of while.
 		System.out.printf("end of prog\n");
-	}
 
-}
+	} // end of main.
+
+} // end of class.
