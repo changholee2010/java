@@ -1,5 +1,7 @@
 package com.yedam;
 
+import java.util.Scanner;
+
 // 객체(object) 지향 언어 
 // class : 객체를 자바언어로 정의.
 // HelloWorld.java 소스코드. => HelloWorld.class (실행)
@@ -8,6 +10,8 @@ public class HelloWorld {
 	// method: 기능.
 	public static void main(String[] args) {
 		System.out.println("Hello, World");
+
+		Scanner scn = new Scanner(System.in);
 
 		int myAge = 20;
 		myAge = 25;
