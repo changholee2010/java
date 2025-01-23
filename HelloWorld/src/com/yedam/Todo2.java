@@ -16,7 +16,7 @@ public class Todo2 {
 		String[] friendAry = new String[100];
 		friendAry[0] = "홍길동,010-1234-1234,남";
 		friendAry[1] = "김민석,010-3333-3221,남";
-		friendAry[2] = "최선희,010-1212-3423,여";
+		friendAry[2] = "송선희,010-1212-3423,여";
 		friendAry[3] = "김지영,010-3333-3555,여";
 
 		while (run) {
@@ -58,10 +58,8 @@ public class Todo2 {
 				// 등록하기.
 				for (int i = 0; i < friendAry.length; i++) {
 					if (friendAry[i] == null) {
-						if (!isExist) {
-							friendAry[i] = newFriend; // 입력.
-							System.out.println("등록완료.");
-						}
+						friendAry[i] = scn.nextLine(); // 입력.
+						System.out.println("등록완료.");
 						break;
 					}
 				}
