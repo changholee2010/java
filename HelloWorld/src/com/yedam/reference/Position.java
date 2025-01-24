@@ -2,7 +2,7 @@ package com.yedam.reference;
 
 import java.util.Scanner;
 
-public class BookExe2 {
+public class Position {
 	public static void main(String[] args) {
 		Scanner scn = new Scanner(System.in);
 
